@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Personal Habit Tracker</h1>
+            <p>Track your daily habits and build consistency</p>
+        </header>
+
+        <main>
+            <section class="add-habit">
+                <h2>Add New Habit</h2>
+                <div class="input-group">
+                    <input type="text" id="habitInput" placeholder="Enter a new habit (e.g., Drink 8 glasses of water)">
+                    <button id="addHabitBtn">Add Habit</button>
+                </div>
+            </section>
+
+            <section class="habits-list">
+                <h2>Your Habits</h2>
+                <div id="habitsContainer">
+                    <!-- Habits will be dynamically added here -->
+                </div>
+            </section>
+
+            <section class="stats">
+                <h2>Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Habits</h3>
+                        <span id="totalHabits">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Completed Today</h3>
+                        <span id="completedToday">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Success Rate</h3>
+                        <span id="successRate">0%</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

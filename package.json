@@ -1,0 +1,49 @@
+{
+  "name": "personal-habit-tracker",
+  "version": "1.0.0",
+  "description": "A simple, elegant web application for tracking daily habits and building consistency",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . --live",
+    "build": "echo 'No build step required for vanilla HTML/CSS/JS'",
+    "test": "echo 'No tests specified yet'",
+    "lint": "echo 'No linting configured yet'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "keywords": [
+    "habit-tracker",
+    "productivity",
+    "vanilla-js",
+    "frontend",
+    "web-app",
+    "habits",
+    "tracking",
+    "personal-development",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/personal-habit-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/personal-habit-tracker/issues"
+  },
+  "homepage": "https://github.com/yourusername/personal-habit-tracker#readme",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
+
