@@ -1,3 +1,22 @@
+function escapeHTML(str) {
+    const replacements = {
+        '<': '&lt;',
+        '>': '&gt;',
+        '&': '&amp;',
+        '"': '&quot;',
+        "'": '&#39;'
+    };
+    return String(str).replace(/[<>&"']/g, ch => replacements[ch]);
+}
+
+if (typeof window !== 'undefined') {
+    window.escapeHTML = escapeHTML;
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports.escapeHTML = escapeHTML;
+}
+
 class HabitTracker {
     constructor() {
         this.habits = this.loadHabits();
@@ -104,7 +123,7 @@ class HabitTracker {
             return `
                 <div class="habit-item ${isCompleted ? 'completed' : ''}">
                     <div class="habit-info">
-                        <div class="habit-text ${isCompleted ? 'completed' : ''}">${habit.text}</div>
+                        <div class="habit-text ${isCompleted ? 'completed' : ''}">${escapeHTML(habit.text)}</div>
                         <div class="habit-meta">
                             <small>Streak: ${streak} days | Created: ${new Date(habit.createdAt).toLocaleDateString()}</small>
                         </div>
